@@ -37,7 +37,7 @@
                         <div>
                             <label for="birthdate" class="label">Date of birth*</label>
                             <br>
-                            <input type="date" class="input input-1" name="birthdate"  id="birthdate"required>
+                            <input type="date" class="input input-1" name="birthdate" max="2002-12-31" id="birthdate"required>
                         </div>
         <div>
                             <label for="country" class="label">Country*</label>

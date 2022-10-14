@@ -9,7 +9,15 @@ $country=$_POST['country'];
 $data=[$name,$email,$dob,$gender,$country];
 
 $file=fopen('userdata.csv','a');
-fputcsv($file,$data);
+    if($file){
+        echo 'file opened';
+        fputcsv($file,$data);
+
+    }
+    else{
+        echo 'file not opened';
+    };
+    fclose($file);
 print_r('Name:'.$name. "<br>".
  "Email:".$email."<br>".
  "Date of Birth:" .$dob. "<br>".
